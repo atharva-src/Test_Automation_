@@ -96,8 +96,7 @@ const Mustang = Object.create(carPrototype, {
         color : "Metallic Black",
         HorsePower : "795 BHP",
         Speed : "350 KmpH"
-        }
-        
+        }  
     },
     insurance : {
       value :{
@@ -131,7 +130,6 @@ types :-
 //1 :- function Declaration
 
 function airPlane (){
-
     return `The Flight is very high in the sky right now`
 }
 
@@ -195,6 +193,50 @@ console.log(nameArray("penny", "barber"));
 */
 
 
+function printEvenNum(start,end){
+    for(let i =start; i<=end; i++){
+        if(i %2 ===0){
+            console.log(i)
+        }
+    }
+}
+console.log("---Print Even----")
+printEvenNum(1,10)
 
 
+let evenNumb = function printEven(start,end){
+    for(let i= start; i<=end; i++){
+        if( i%2 === 0){
+            console.log(i)
+        }
+    }
+}
+console.log("---even Num---")
+evenNumb(2,20)
 
+
+ //palindrome program 
+
+//  let palindrome = function isPalindrome(str){
+//     let reversed = str.split("").reverse().join('')
+//     return reversed === str
+//  }
+
+//  console.log(palindrome("hello")) 
+
+ const pal = (Str) => ( reversed = Str.split("").reverse().join(''), reversed === Str)
+ console.log("--This is arrow function of Palindrome----")
+ console.log(pal("malayalam")) 
+
+
+ //fibonaci :- where each number is a sum of previous 2 number
+ // prints first 10 Fibonacci numbers
+function fibonacci(n){
+    let a = 0, b = 1 
+    for(let i = 0; i<n; i++){
+        console.log(a);
+        [a, b] = [b, a + b]
+    }
+}
+console.log("---FIBONACCI---")
+fibonacci(90)
